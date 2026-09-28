@@ -1,1 +1,1 @@
-code .gitignore
+我真的能成为ai高手吗
