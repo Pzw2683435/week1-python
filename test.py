@@ -1,12 +1,10 @@
-grades = {
-    "数学": 85,
-    "英语": 92,
-    "Python": 78
-}
+with open("knowledge.md", "r", encoding="utf-8") as f:
+    lines = f.readlines()
 
-# 补两句：算出平均分并打印
-# 提示：sum(grades.values()) 求和，len(grades) 算个数
-total=sum(grades.values())
-num=len(grades)
-ave=total/num
-print(f"{ave:.2f}")
+print(f"总共有 {len(lines)} 行")
+print(f"第 1 行是：{lines[0]}")
+print(f"第 2 行是：{lines[1]}")
+headings = [line for line in lines if line.startswith("#")]
+print(f"有 {len(headings)} 个标题")
+for h in headings[:5]:
+    print(h.strip())
