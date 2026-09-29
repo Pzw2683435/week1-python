@@ -1,9 +1,10 @@
-fruits = ["苹果", "香蕉", "橙子", "葡萄"]
-print(fruits)
-print(fruits[0])
-print(fruits[1])
-print(fruits[3])
-print(len(fruits))
-fruits.append("西瓜")
-print(fruits)
-print("abc")
+score = 95
+
+if score >= 90:
+    print("优秀")
+elif score >= 80:
+    print("良好")
+elif score>=60:
+    print("及格")
+else:
+    print("不及格")
