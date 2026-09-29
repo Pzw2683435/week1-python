@@ -1,10 +1,12 @@
-score = 95
+grades = {
+    "数学": 85,
+    "英语": 92,
+    "Python": 78
+}
 
-if score >= 90:
-    print("优秀")
-elif score >= 80:
-    print("良好")
-elif score>=60:
-    print("及格")
-else:
-    print("不及格")
+# 补两句：算出平均分并打印
+# 提示：sum(grades.values()) 求和，len(grades) 算个数
+total=sum(grades.values())
+num=len(grades)
+ave=total/num
+print(f"{ave:.2f}")
